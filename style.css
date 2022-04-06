@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  /* no inherited but with * we force elements to inherit this property */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.btn {
+  border: 0;
+  background: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 15px;
+}
+
+.card {
+  background-color: white;
+  max-width: 320px;
+  margin: 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgb(0, 0, 0, 0.1);
+}
+
+.content {
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.card__header {
+  margin-top: 10px;
+}
+
+.btn__inline {
+  color: hsl(245, 75%, 52%);
+  border-bottom: 0.1px solid hsl(245, 75%, 52%);
+  display: inline;
+}
+
+.btn__main {
+  background-color: hsl(245, 75%, 52%);
+  align-self: stretch;
+  padding: 13px 0;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 10px 15px rgb(0, 0, 0, 0.2);
+}
+
+.btn__secondary {
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.plan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.plan__text-box {
+  font-size: 13px;
+  margin-right: 35px;
+}
+
+.plan__text,
+.card__heading {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.card__text,
+.btn__secondary,
+.plan__price {
+  color: hsl(224, 23%, 55%);
+}
+
+.card__text {
+  text-align: center;
+}
+
+.btn {
+  transition: all 250ms;
+}
+
+.btn__main:hover {
+  background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.btn__inline:hover {
+  color: hsla(245, 75%, 52%, 0.7);
+}
+
+.btn__secondary:hover {
+  color: hsl(223, 47%, 23%);
+}
